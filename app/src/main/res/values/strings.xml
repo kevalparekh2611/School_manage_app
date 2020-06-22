@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">SCM</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">School Name</string>
+    <string name="nav_header_subtitle">Tools to manage school system</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="www_sannibhtechologies_com">www.SannibhTechologies.com</string>
+    <string name="switch_view">Switch view</string>
+    <string name="title_activity_profile">profile</string>
+    <string name="user">USER</string>
+    <string name="pass">PASSWORD</string>
+    <string name="btn_login">LOGIN</string>
+
+    <string name="present">PRESENT</string>
+    <string name="holidays">Holidays</string>
+    <string name="number_of_days">Number of Days</string>
+    <string name="ABSENT">ABSENT</string>
+    <string name="LEAVE">LEAVE</string>
+    <string name="total_working_days">Total Working Days</string>
+    <string name="number_days_present">Number of Days Present</string>
+    <string name="annual">annual</string>
+</resources>

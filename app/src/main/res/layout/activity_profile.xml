@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:orientation="vertical"
+    android:background="@color/lightgrey"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/innerlay1"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:clickable="true"
+                 />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/creme">
+
+                <TextView
+                    android:id="@+id/nm"
+                    android:layout_width="69dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:text="Name:"
+                    android:textAlignment="center"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/snm"
+                    android:layout_width="134dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@+id/layout1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+
+            ></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:orientation="vertical"
+                android:background="@android:color/holo_blue_bright"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+
+                    android:id="@+id/db"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Date of Birth:"
+                    android:textSize="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:autofillHints=""
+                    android:ems="11"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@android:color/holo_green_light">
+
+                <TextView
+                    android:id="@+id/sd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Admission No.:"
+                    android:textSize="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/sid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@android:color/holo_red_light">
+
+
+                <TextView
+                    android:id="@+id/stclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Class-Section:"
+                    android:textSize="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/sclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:ems="12"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/yellow">
+
+                <TextView
+                    android:id="@+id/tename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Class-Teacher:"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:ems="12"
+                    android:inputType="textPersonName"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+
+        ></LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="79dp"-->
+        <!--android:layout_marginEnd="3dp"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/layout1">-->
+
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/profile_buttonview"&ndash;&gt;-->
+            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/button5"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:drawableLeft="@drawable/ic_people_black_24dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingLeft="75dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/button6"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="79dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+
+                <!--&lt;!&ndash;android:drawableLeft="@drawable/ic_home_black_24dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:paddingLeft="70dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_orange_light">
+
+            <ImageView
+                android:id="@+id/papa_img"
+                android:layout_width="61dp"
+                android:layout_height="78dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_father" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fm"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:gravity="center_vertical"
+                    android:text="Father Name:"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:id="@+id/fnm"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/fco"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:gravity="center_vertical"
+                    android:text="Father Contact"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:id="@+id/fc"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"
+                     />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@android:color/holo_purple">
+
+            <ImageView
+                android:id="@+id/mom_img"
+                android:layout_width="61dp"
+                android:layout_height="73dp"
+                android:src="@mipmap/ic_mother"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/monm"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:gravity="center_vertical"
+                    android:text="Mother Name"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/mnm"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+
+                    android:textSize="20dp"/>
+
+                <TextView
+                android:id="@+id/moc"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:gravity="center_vertical"
+                android:text="Mother contact"
+                    android:textSize="10dp"/>
+
+                <TextView
+                    android:id="@+id/mc"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/layout3"
+        android:background="@color/colorAccent"
+
+        >
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_home_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ad_txt"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text="Address"
+                android:textSize="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/add_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:textSize="20dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

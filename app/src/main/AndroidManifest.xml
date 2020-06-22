@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.scm">
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/school_icon"
+        android:label="The School"
+        android:roundIcon="@drawable/school_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Display_calander"></activity>
+
+        <activity android:name=".Main_Gallary" />
+        <activity android:name=".IW" />
+        <activity android:name=".Circular_MainActivity" />
+        <activity android:name=".CircularActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".News_MainActivity" />
+        <activity android:name=".Remarks_MainActivity" />
+        <activity android:name=".HW_MainActivity" />
+        <activity android:name=".AchievementMainActivity" />
+        <activity android:name=".Achievement" />
+        <activity android:name=".LibraryMainActivity" />
+        <activity android:name=".Fees" />
+        <activity android:name=".profile" />
+        <activity android:name=".activity_attendence" />
+        <activity android:name=".login" /> <!-- <activity android:name=".Login" /> -->
+        <activity
+            android:name=".splash_screen"
+            android:label="The School"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="ExtraText">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="The School"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

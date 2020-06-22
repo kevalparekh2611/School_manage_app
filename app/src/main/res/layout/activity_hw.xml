@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- the circular icon on the left -->
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="93dp"
+
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+
+            android:src="@mipmap/ic_hw" />
+        <!--android:background="@drawable/circle_bg"-->
+        <!--android:tint="@android:color/white"-->
+
+
+        <!-- the blue line -->
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:id="@+id/item_line"
+            android:background="@android:color/black">
+
+            <!-- the semi transparent circle on the line -->
+            <View
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/ic_remove_circle_black_24dp"/>
+
+        </FrameLayout>
+
+        <!-- views at the right of the blue line -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:background="@android:color/holo_green_light"
+            android:paddingLeft="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/hwdate"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_marginTop="15dp"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/hwteacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_marginTop="15dp"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hw"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:padding="25dp"
+                android:textSize="20dp" />
+
+            <!-- other views -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

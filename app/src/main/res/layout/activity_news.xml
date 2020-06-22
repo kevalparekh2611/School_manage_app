@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- the circular icon on the left -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/ic_news"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            />
+        <!--android:background="@drawable/circle_bg"-->
+        <!--android:tint="@android:color/white"-->
+
+
+        <!-- the blue line -->
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:id="@+id/item_line"
+            android:background="@android:color/black">
+
+            <!-- the semi transparent circle on the line -->
+            <View
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/ic_remove_circle_black_24dp"/>
+
+        </FrameLayout>
+
+        <!-- views at the right of the blue line -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:paddingLeft="24dp">
+
+            <TextView
+                android:id="@+id/ndate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginTop="15dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:padding="25dp"
+                android:textSize="20dp"
+                android:clickable="true"
+                android:autoLink="all"/>
+
+            <!-- other views -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
