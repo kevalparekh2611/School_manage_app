@@ -1,9 +1,11 @@
 # School_manage_app
-school management demo mobile app
+school management demo mobile app 
+Android Studio | XAMPP(MYSQL)
 
-Demo application ready to deploy 
-working with xampp...
-upload the database on XAMPP MySQL
+How to get started
+-upload the database on XAMPP MySQL
+-paste the PHP scripts in htdocs folder XAMPP
+-Open the folder in android studio
+-Run the app in a device or emulator
 
-run on android studio.
 
