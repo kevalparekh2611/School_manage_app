@@ -2,7 +2,7 @@
 school management demo mobile app 
 Android Studio | XAMPP(MYSQL)
 
-How to get started
+How to get started...
 -upload the database on XAMPP MySQL
 -paste the PHP scripts in htdocs folder XAMPP
 -Open the folder in android studio
